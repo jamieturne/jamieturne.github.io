@@ -21,10 +21,16 @@
         .header {
             background: white;
             padding: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 800px;
+            width: 90%;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .header-logo {
@@ -34,7 +40,8 @@
         }
 
         .header-logo img {
-            height: 40px;
+            height: 24px;
+            width: auto;
         }
 
         .header-nav {
@@ -236,20 +243,22 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-logo">
-            <img src="https://avatars.mds.yandex.net/get-lpc/12373972/f81d97a2-4d25-420d-88eb-101a5ad35951/orig" alt="Yandex Eda Logo">
+        <div class="header-content">
+            <div class="header-logo">
+                <img src="https://avatars.mds.yandex.net/get-lpc/12373972/f81d97a2-4d25-420d-88eb-101a5ad35951/orig" alt="Yandex Eda Logo">
+            </div>
+            <nav class="header-nav">
+                <a href="#conditions">Условия</a>
+                <a href="#work">О работе</a>
+                <a href="https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=00e9f65030c44638a7d578a3516e2623&utm_content=blank">Регистрация</a>
+            </nav>
         </div>
-        <nav class="header-nav">
-            <a href="#conditions">Условия</a>
-            <a href="#work">О работе</a>
-            <a href="https://reg.eda.yandex.ru/?advertisement_campaign=forms_for_agents&user_invite_code=00e9f65030c44638a7d578a3516e2623&utm_content=blank">Регистрация</a>
-        </nav>
     </header>
 
     <div class="container">
         <div class="video-container">
             <iframe 
-                src="https://www.youtube.com/embed/IapTYGY2AFM?rel=0&modestbranding=1&showinfo=0&controls=0"
+                src="https://www.youtube.com/embed/IapTYGY2AFM?rel=0&modestbranding=1&showinfo=0&controls=0&autoplay=1&mute=1&playlist=IapTYGY2AFM&loop=1"
                 title="Станьте курьером Яндекс Еды"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
